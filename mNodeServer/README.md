@@ -2,13 +2,8 @@ generate demo user:
 node example.js
 
 
+==========================================
 
-
-
-
-
-
-=============================================================
 status code:
 server said
 8899 : "forbid connect"
