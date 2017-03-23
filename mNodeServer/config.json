@@ -1,0 +1,23 @@
+{
+  "port":8880,
+  "rsa":{
+    "private":"rsa_pri.pem",
+    "public":"rsa_pub.pem"
+  },
+  "security":{
+    "tokenLife":3600,
+    "exKeyLife":20
+  },
+  "mongoose":{
+      "uri":"mongodb://localhost/mNodeServer"
+  },
+  "debug":1,
+  "api":{
+    "version":"v1"
+  },
+  "user":{
+    "username":"willyy",
+    "authcode":"7788",
+    "password":"pass123"
+  }
+}
