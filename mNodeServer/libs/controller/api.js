@@ -75,53 +75,6 @@ router.use(function (req, res, next) {
                     })
                 }
             });
-            /*
-            使用redis
-
-
-            User.findOne({_id:userid},function (err,user) {
-                if (err){
-                    res.json({
-                        status:err
-                    });
-                }
-                else if (user === null){
-                    res.json({
-                        status:4400
-                    });
-                }
-                else{
-                    var accessKey = user.checkAccessKeyExpire();
-                    if (accessKey){
-                        mCrypto.verifyJwt(jwt,accessKey,function (err, payload) {
-                            req.userid = userid;
-                            req = fixss(req);
-                            if (!err){
-                                if (userid === payload.iss)
-                                {
-                                    next();
-                                }
-                                else{
-                                    res.json({
-                                        status:8899
-                                    });
-                                }
-                            }
-                            else{
-                                res.json({
-                                    status:8899
-                                });
-                            }
-                        });
-                    }
-                    else{
-                        res.json({
-                            status:4000
-                        })
-                    }
-                }
-            });
-             */
         }
     }
 });

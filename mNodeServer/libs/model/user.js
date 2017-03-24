@@ -55,7 +55,6 @@ User.virtual('password')
     .set(function(password) {
         this._plainPassword = password;
         this.salt = crypto.randomBytes(32).toString('hex');
-        //more secure - this.salt = crypto.randomBytes(128).toString('hex');
         this.hashedPassword = this.encryptPassword(password);
     })
     .get(function() { return this._plainPassword; });
