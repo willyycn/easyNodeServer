@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,24 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YxA-bs-9oY">
-                                <rect key="frame" x="38" y="92" width="298" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3v-67-ajy">
-                                <rect key="frame" x="38" y="169" width="298" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F33-r6-I5X">
-                                <rect key="frame" x="38" y="246" width="298" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pF3-Xz-d6W">
                                 <rect key="frame" x="38" y="350" width="298" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.49792803340000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,20 +44,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="B3v-67-ajy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3xh-D6-Tcu"/>
-                            <constraint firstItem="YxA-bs-9oY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.139" id="A54-gr-bcR"/>
-                            <constraint firstItem="F33-r6-I5X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BtA-gT-jQJ"/>
-                            <constraint firstItem="YxA-bs-9oY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.795" id="CJL-lp-dfm"/>
                             <constraint firstItem="pF3-Xz-d6W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HSE-bS-Npe"/>
                             <constraint firstItem="SR2-dh-F7d" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.795" id="JUB-8G-Xhi"/>
-                            <constraint firstItem="B3v-67-ajy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.795" id="PZl-S6-IVQ"/>
                             <constraint firstItem="SR2-dh-F7d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QGu-SA-h7F"/>
-                            <constraint firstItem="F33-r6-I5X" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.795" id="Que-S2-R1K"/>
-                            <constraint firstItem="B3v-67-ajy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.253" id="WYi-2X-2bQ"/>
                             <constraint firstItem="SR2-dh-F7d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.632" id="d2x-Z2-Aai"/>
-                            <constraint firstItem="F33-r6-I5X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.368" id="gZa-1B-EOi"/>
                             <constraint firstItem="pF3-Xz-d6W" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.795" id="h5X-nI-xgc"/>
-                            <constraint firstItem="YxA-bs-9oY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kNu-ZZ-dUG"/>
                             <constraint firstItem="pF3-Xz-d6W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.525" id="npi-Fe-PyP"/>
                         </constraints>
                     </view>

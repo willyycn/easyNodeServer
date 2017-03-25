@@ -9,7 +9,7 @@
 #import "GlobalTools.h"
 NSString * const ServerUrl = @"http://10.10.252.10:8880/";
 NSInteger const exKeyLife = 20;
-//todo: 增加常用方法
+
 @interface GlobalTools()
 {
     

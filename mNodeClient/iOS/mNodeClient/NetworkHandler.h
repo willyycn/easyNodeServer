@@ -11,7 +11,6 @@
 @interface NetworkHandler : NetBaseHandler
 
 - (void)Login:(NSDictionary *)loginInfo withHandler:(void (^)(NSDictionary *res,NSError *error))handler;
-
 - (void)sayHello:(NSDictionary *)helloInfo withHandler:(void (^)(NSDictionary *res,NSError *error))handler;
 - (void)postHello:(NSDictionary *)helloInfo withHandler:(void (^)(NSDictionary *res,NSError *error))handler;
 - (void)apiHelloWithHandler:(void (^)(NSDictionary *res,NSError *error))handler;

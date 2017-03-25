@@ -46,7 +46,10 @@
     return [[self sharedHandler] instanceQueue];
 }
 
-//获取token 获取
+/**
+ * get Token
+ *
+ */
 - (void)getTokenByUserInfo:(NSDictionary *)userinfo withHandler:(void (^) (NSDictionary *response, NSError *error))handler{
     NSString *username = userinfo[@"username"] !=nil ? userinfo[@"username"]:@"";
     NSString *password = userinfo[@"password"] !=nil ? userinfo[@"password"]:@"";
@@ -85,6 +88,10 @@
     }];
 }
 
+/**
+ * regain token
+ *
+ */
 - (void)regainTokenWithHandler:(void (^) (NSDictionary *response, NSError *error))handler{
     NSString * jsonStr = [[CryptoWrapper sharedWrapper]getRegainTokenStr];
     [[[self class] sharedHandler] POST:@"api/regainToken" parameters:@{@"info":jsonStr} progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -108,7 +115,10 @@
     }];
 }
 
-//使用token base Api
+/**
+ * base Api using jwt as the token
+ *
+ */
 - (void)baseApi:(NSString *)ApiUrl withInfo:(NSDictionary *)param withMethod:(NSString *)method progress:(void (^)(NSProgress *_Nonnull downloadProgress))progress handler:(void (^)(NSDictionary *res,NSError *error))handler{
     NSString *jwt = [[CryptoWrapper sharedWrapper]signatureJWT];
     [[[[self class] sharedHandler] requestSerializer] setValue:jwt forHTTPHeaderField:@"JWT"];
@@ -219,6 +229,5 @@
         }];
     }
 }
-
 
 @end
