@@ -5,30 +5,46 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
-    <Space
+    <TextView
+        android:id="@+id/monitor"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.5" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp" />
 
     <Button
-        android:id="@+id/_main_getToken"
+        android:id="@+id/_main_getToken_authcode"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1"
+        android:layout_height="44dp"
+        android:layout_weight="0.02"
         android:background="@color/colorPrimary"
-        android:text="GET TOKEN"
+        android:text="GET TOKEN BY Authcode"
         android:textColor="@android:color/background_light" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
+        android:layout_weight="0.1" />
+
+    <Button
+        android:id="@+id/_main_getToken_password"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_weight="0.02"
+        android:background="@color/colorPrimary"
+        android:text="GET TOKEN BY password"
+        android:textColor="@android:color/background_light" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
         android:layout_weight="0.1" />
 
     <Button
         android:id="@+id/_main_base"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1"
+        android:layout_height="44dp"
+        android:layout_weight="0.02"
         android:background="@color/colorPrimary"
         android:text="Base APi"
         android:textColor="@android:color/background_light" />

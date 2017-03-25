@@ -193,6 +193,8 @@ router.post('/getToken',function (req, res) {
             user.setAccessKey(accessKey);
             user.save();
 
+            redisClient.setRedis("userid:"+userid,accessKey);
+
             var info = {};
             info.userid = userid;
             info.accessKey = accessKey;

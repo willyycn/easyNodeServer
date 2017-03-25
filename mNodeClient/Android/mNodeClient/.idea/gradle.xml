@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$USER_HOME$/Documents/PlayGround/_AlphaGo/JustApp/mNode/githubVersion/mNodeClient/Android/mNodeClient" />
-            <option value="$USER_HOME$/Documents/PlayGround/_AlphaGo/JustApp/mNode/githubVersion/mNodeClient/Android/mNodeClient/app" />
+            <option value="$USER_HOME$/Documents/PlayGround/_AlphaGo/JustApp/mNode/_github/easyNodeServer/mNodeClient/Android/mNodeClient" />
+            <option value="$USER_HOME$/Documents/PlayGround/_AlphaGo/JustApp/mNode/_github/easyNodeServer/mNodeClient/Android/mNodeClient/app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

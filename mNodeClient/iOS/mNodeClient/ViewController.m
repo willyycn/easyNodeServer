@@ -9,7 +9,9 @@
 #import "ViewController.h"
 #import "NetworkHandler.h"
 @interface ViewController ()
-
+{
+    __weak IBOutlet UITextView *monitorText;
+}
 @end
 
 @implementation ViewController
@@ -24,11 +26,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)login:(id)sender {
+- (IBAction)loginByAuthcode:(id)sender {
     NSDictionary *dic = @{@"username":@"willyy",@"authcode":@"7788"}.copy;
     [[NetworkHandler sharedHandler]Login:dic withHandler:^(NSDictionary *res, NSError *error) {
         if (res) {
             NSLog(@"res %@",res);
+            NSString *str = monitorText.text;
+            str = [[[res description] stringByAppendingString:@"\n"] stringByAppendingString:str];
+            ;
+            [monitorText setText:str];
+        }
+    }];
+}
+- (IBAction)loginByPassword:(id)sender {
+    NSDictionary *dic = @{@"username":@"willyy",@"password":@"pass123"}.copy;
+    [[NetworkHandler sharedHandler]Login:dic withHandler:^(NSDictionary *res, NSError *error) {
+        if (res) {
+            NSLog(@"res %@",res);
+            NSString *str = monitorText.text;
+            str = [[[res description] stringByAppendingString:@"\n"] stringByAppendingString:str];
+            ;
+            [monitorText setText:str];
         }
     }];
 }
@@ -39,8 +57,12 @@
     __block NSInteger i = now.timeIntervalSince1970;
     [[NetworkHandler sharedHandler]postHello:dic withHandler:^(NSDictionary *res, NSError *error) {
         if (res) {
-            NSLog(@"res %@",res);
             NSLog(@"respone in %f s",[NSDate date].timeIntervalSince1970 - i);
+            NSLog(@"res %@",res);
+            NSString *str = monitorText.text;
+            str = [[[res description] stringByAppendingString:@"\n"] stringByAppendingString:str];
+            ;
+            [monitorText setText:str];
         }
         if (error) {
             NSLog(@"error %@",error);
