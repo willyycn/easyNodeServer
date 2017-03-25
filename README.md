@@ -30,7 +30,7 @@ iOS client:
 modify GlobalTools.m, change ServerUrl to server address.
 
 Android client:
-modify 修改GlobalUtil.java, change ServerUrl to server address.
+modify GlobalUtil.java, change ServerUrl to server address.
 
 security issue:
 use RSA exchange temporary AES key, use AES encrypt JWT signature key, use JWT as user token.
