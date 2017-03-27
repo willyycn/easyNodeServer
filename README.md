@@ -22,7 +22,7 @@ Android端使用:
 
 Very easy used NodeServer  Also consider security.  include iOS and Android Client
 
-Sever use:
+Server use:
 Install mongodb, install redis, open the mNodeServer root directory using commandline , run "npm install", run "node example.js". Example.js import example user account to mongodb.
 Start the server. Other configuration check config.json
 
